@@ -50,7 +50,7 @@ instantiating and accessing custom class instances.
 Specifications
 ^^^^^^^^^^^^^^
 
-#.  Create a new module named ``task_01.py``. In ``task_01.py``:
+#.  Open a new Jupyter notebook
 
 #.  Import the ``produce`` module
 
@@ -68,7 +68,7 @@ Specifications
 #.  Call the ``get_expiration()`` method of ``EGGPLANT`` and save its result
     to a variable named, ``EGGPLANT_EXPIRES``
 
-Examples
+Expected Output
 ^^^^^^^^
 
 .. code:: pycon
@@ -86,7 +86,7 @@ In this task you'll be creating your own class from the ground-up.
 Specifications
 ^^^^^^^^^^^^^^
 
-#.  Create a new file named ``task_02.py``. In ``task_02.py``:
+#.  Use a new cell in your notebook
 
 #.  Import the ``time`` module. This module provides functions specifically
     related to time. We'll use it for its ``time()`` function which returns a
@@ -105,7 +105,7 @@ Specifications
     Classes without an explicit parent class should always be subclassed to the
     generic ``object`` class.
 
-Examples
+Expected Output
 ^^^^^^^^
 
 .. code:: pycon
@@ -123,7 +123,7 @@ we'll be subclassing an existing class to slightly alter its properties.
 Specifications
 ^^^^^^^^^^^^^^
 
-#.  Create a new file named ``task_03.py``. In ``task_03.py``:
+#.  Use a new cell in your notebook
 
 #.  Import the ``produce`` module
 
@@ -133,7 +133,7 @@ Specifications
 #.  Update the *class attribute* named ``duration`` to a new value of
     ``5356800``
 
-Examples
+Expected Output
 ^^^^^^^^
 
 .. code:: pycon
@@ -153,7 +153,7 @@ extending the ``Car()`` class found inside.
 Specifications
 ^^^^^^^^^^^^^^
 
-#.  Create a new module named ``task_04.py``.
+#.  Use a new cell in your notebook
 
 #.  Import the ``car`` module.
 
@@ -202,7 +202,7 @@ Specifications
 #.  Test that your ``CustomCar()`` class works with both a ``tires`` argument
     and without.
 
-Examples
+Expected Output
 ^^^^^^^^
 
 .. code:: pycon
@@ -213,51 +213,7 @@ Examples
     >>> isinstance(mycar.tires[0], CustomTire)
     True
 
-Executing Tests
-===============
 
-Code must be functional and pass tests before it will be eligible for credit.
-
-Linting
--------
-
-Lint tests check your code for syntactic or stylistic errors To execute lint
-tests against a specific file, simply open a terminal in the same directory as
-your code repository and type:
-
-.. code:: console
-
-    $ pylint filename.py
-
-Where ``filename.py`` is the name of the file you wish to lint test.
-
-Unit Tests
-----------
-
-Unit tests check that your code performs the tested objectives. Unit tests
-may be executed individually by opening a terminal in the same directory as
-your code repository and typing:
-
-.. code:: console
-
-    $ nosetests tests/name_of_test.py
-
-Where ``name_of_test.py`` is the name of the testfile found in the ``tests``
-directory of your source code.
-
-Running All Tests
------------------
-
-All tests may be run simultaneously by executing the ``runtests.sh`` script
-from the root of your assignment repository. To execute all tests, open a
-terminal in the same directory as your code repository and type:
-
-.. code:: console
-
-    $ ./runtests.sh
-
-Submission
-==========
 
 Code should be submitted via Blackboard.
 
