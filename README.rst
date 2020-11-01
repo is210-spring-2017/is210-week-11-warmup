@@ -49,7 +49,7 @@ Specifications
 
 #.  Use a new cell in your notebook
 
-#.  Pase the following code into your cell:
+#.  Create the following classes in your notebook (paste code into a cell, using proper indentation):
 
 .. code:: pycon
 class Car(object):
