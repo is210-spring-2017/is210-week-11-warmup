@@ -18,10 +18,7 @@ in isolated contexts to get a feel for how they work.
 Instructions
 ============
 
-The following tasks will either have you interacting with existing files in
-the assignment repository or creating new ones on the fly. Don't forget to add
-your interpreter directive, utf-8 encoding, and a short docstring with any new
-files that you create!
+
 
 .. important::
 
@@ -110,28 +107,6 @@ Expected Output
 
 .. code:: pycon
 
-    >>> mysnap = Snapshot()
-    >>> hasattr(mysnap, 'created')
-    True
-
-Task 03
--------
-
-Subclasses are part of the heart and soul of object-oriented programming. Here,
-we'll be subclassing an existing class to slightly alter its properties.
-
-Specifications
-^^^^^^^^^^^^^^
-
-#.  Use a new cell in your notebook
-
-#.  Import the ``produce`` module
-
-#.  Create a new class named ``Apple`` that is subclassed from
-    ``produce.Produce``
-
-#.  Update the *class attribute* named ``duration`` to a new value of
-    ``5356800``
 
 Expected Output
 ^^^^^^^^
@@ -155,7 +130,41 @@ Specifications
 
 #.  Use a new cell in your notebook
 
-#.  Import the ``car`` module.
+#.  Pase the following code into your cell:
+
+.. code:: pycon
+
+class Car(object):
+    """A moving vehicle definition."""
+
+    def __init__(self, color='red'):
+        """Constructor for the Car() class.
+        Args:
+            color (string): The color of the car. Defaults to ``'red'``.
+        Attributes:
+           color (string): The color of the car.
+        """
+        self.color = color
+
+
+class Tire(object):
+    """A round rubber thing."""
+
+    def __init__(self, miles=0):
+        """Constructor for the Tire() class.
+        Args:
+            miles (integer): The number of miles on the Tire. Defaults to 0.
+        Attributes:
+           miles (integer): The number of miles on the Tire.
+        """
+        self.miles = miles
+
+    def add_miles(self, miles):
+        """Increments the tire mileage by the specified miles.
+        Args:
+            miles (integer): The number of miles to add to the tire.
+        """
+        self.miles += miles
 
 #.  Create a class named ``CustomCar()`` that is itself, a child-class of
     ``car.Car``
