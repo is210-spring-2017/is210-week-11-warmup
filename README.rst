@@ -53,19 +53,14 @@ Specifications
 
 .. code:: pycon
 class Car(object):
-
     def __init__(self, color='red'):
         self.color = color
 
-
 class Tire(object):
-
     def __init__(self, miles=0):
         self.miles = miles
-
     def add_miles(self, miles):
         self.miles += miles
-
 
 
 #.  Create a class named ``CustomCar()`` that is itself, a child-class of
