@@ -40,87 +40,6 @@ Warmup Tasks
 Task 01
 -------
 
-You've already instantiated and used some classes already if you consider
-your prior use of such classes like the ``Decimal()`` class. Here you'll be
-instantiating and accessing custom class instances.
-
-Specifications
-^^^^^^^^^^^^^^
-
-#.  Open a new Jupyter notebook
-
-#.  Import the ``produce`` module
-
-#.  Create two instances of the ``Produce()`` class
-
-    #.  The first should not be passed any constructor variables and should be
-        assigned to a variable named ``TOMATO``
-
-    #.  The next should be named ``EGGPLANT`` and the constructor should be
-        passed the value of ``1311210802``
-
-#.  Access the ``arrival`` attribute of ``TOMATO`` and save it to a variable
-    named ``TOMATO_ARRIVAL``
-
-#.  Call the ``get_expiration()`` method of ``EGGPLANT`` and save its result
-    to a variable named, ``EGGPLANT_EXPIRES``
-
-Expected Output
-^^^^^^^^
-
-.. code:: pycon
-
-    >>> isinstance(TOMATO, produce.Produce)
-    True
-    >>> isinstance(EGGPLANT, produce.Produce)
-    True
-
-Task 02
--------
-
-In this task you'll be creating your own class from the ground-up.
-
-Specifications
-^^^^^^^^^^^^^^
-
-#.  Use a new cell in your notebook
-
-#.  Import the ``time`` module. This module provides functions specifically
-    related to time. We'll use it for its ``time()`` function which returns a
-    `Unix Timestamp`_ 
-
-#.  Create a class named ``Snapshot``
-
-#.  Create a constructor for ``Snapshot``
-
-#.  In the constructor, create an *instance attribute* named ``created`` and
-    assign it the output of ``time.time()`` which returns the current
-    `Unix Timestamp`_
-
-.. tip::
-
-    Classes without an explicit parent class should always be subclassed to the
-    generic ``object`` class.
-
-Expected Output
-^^^^^^^^
-
-.. code:: pycon
-
-
-Expected Output
-^^^^^^^^
-
-.. code:: pycon
-
-    >>> print Apple.duration
-    5356800
-    >>> print produce.Produce.duration
-    604800
-
-Task 04
--------
-
 In this exercise, we'll be using subclassing, to demonstrate both the
 *has-a* and *is-a* concepts. Take a peek inside the ``car`` module as we'll be
 extending the ``Car()`` class found inside.
@@ -132,7 +51,7 @@ Specifications
 
 #.  Pase the following code into your cell:
 
-.. code:: pycon
+    .. code:: python
 
 class Car(object):
     """A moving vehicle definition."""
