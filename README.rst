@@ -51,8 +51,7 @@ Specifications
 
 #.  Pase the following code into your cell:
 
-    .. code:: python
-
+.. code:: pycon
 class Car(object):
     """A moving vehicle definition."""
 
@@ -84,6 +83,8 @@ class Tire(object):
             miles (integer): The number of miles to add to the tire.
         """
         self.miles += miles
+
+
 
 #.  Create a class named ``CustomCar()`` that is itself, a child-class of
     ``car.Car``
