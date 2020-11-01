@@ -55,7 +55,7 @@ Specifications
 class Car(object):
     def __init__(self, color='red'):
         self.color = color
-
+        
 class Tire(object):
     def __init__(self, miles=0):
         self.miles = miles
