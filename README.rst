@@ -41,8 +41,8 @@ Task 01
 -------
 
 In this exercise, we'll be using subclassing, to demonstrate both the
-*has-a* and *is-a* concepts. Take a peek inside the ``car`` module as we'll be
-extending the ``Car()`` class found inside.
+*has-a* and *is-a* concepts. We'll be
+extending the ``Car()`` class listed in the instructions below.  The Car() class is defined in step 2 (you can paste that code your notebook and use it as a starting point).
 
 Specifications
 ^^^^^^^^^^^^^^
